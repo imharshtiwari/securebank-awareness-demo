@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SecureBank - Online Banking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #002b8c;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .navbar nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    /* Hero */
+    .hero {
+      background-color: #e0eaff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      color: #002b8c;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      color: #333;
+    }
+
+    /* Login Section */
+    .login-section {
+      background-color: white;
+      margin: 40px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .login-section h3 {
+      color: #002b8c;
+      margin-bottom: 20px;
+    }
+
+    .login-section input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .login-section button {
+      width: 100%;
+      padding: 10px;
+      background-color: #002b8c;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .disclaimer {
+      font-size: 12px;
+      color: red;
+      text-align: center;
+      margin-top: 30px;
+      padding: 0 10px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #002b8c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>🏦 SecureBank</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Online Banking</a>
+      <a href="#">Support</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <h2>Welcome to SecureBank</h2>
+    <p>Your trusted partner for safe and secure online banking.</p>
+  </div>
+
+  <div class="login-section">
+    <h3>Online Banking Login</h3>
+    <form onsubmit="simulateLogin(event)">
+      <input type="text" placeholder="Username / CIF Number" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div class="disclaimer">
+    ⚠️ This is a simulated phishing awareness demo. Do not enter real credentials. No data is collected or transmitted.
+  </div>
+
+  <div class="footer">
+    © 2025 SecureBank (Simulated Site for Education). All rights reserved.
+  </div>
+
+  <script>
+    function simulateLogin(e) {
+      e.preventDefault();
+      const username = e.target[0].value;
+      const password = e.target[1].value;
+      alert(`Simulated login:\nUsername: ${username}\nPassword: ${password}`);
+    }
+  </script>
+
+</body>
+</html>
